@@ -15,8 +15,7 @@ public class DBProject5
 		int choice = Integer.parseInt(args[0]); // Menu Item	
 		// Connect to the database
 		jdbc_db myDB = new jdbc_db();	
-		myDB.connect(Username, mysqlPassword);
-		myDB.initDatabase();				    
+		myDB.connect(Username, mysqlPassword);			    
 		// For debugging purposes:  Show the database before the insert
 		StringBuilder builder = new StringBuilder();
 		
