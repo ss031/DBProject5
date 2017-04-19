@@ -10,13 +10,12 @@ public class DBProject5
    // The main program that inserts a restaurant
    public static void main(String[] args) throws SQLException 
    {
-   		System.out.println("I work");
 		String Username = "arutiaga";              // Change to your own username
 		String mysqlPassword = "LaLaLand";    // Change to your own mysql Password
 		int choice = Integer.parseInt(args[0]); // Menu Item	
 	
 		// Connect to the database
-       		jdbc_db myDB = new jdbc_db();
+       	jdbc_db myDB = new jdbc_db();
        		
 		myDB.connect(Username, mysqlPassword);
 		
@@ -28,14 +27,13 @@ public class DBProject5
 		
 		if(choice == 1)
 		{	
-			System.out.println("I'm in choice 1");
 			String query = "SELECT * FROM Student";
 			builder.append("<br> Table Student before:" + myDB.query(query) + "<br>"); 
 			
 			String studentName = args[1];
 			String studentID = args[2];
 			String Major = args[3];
-			System.out.println("hello!...");
+
 			// Insert the new restaurant
 			String input = "" + studentID + ", '" + studentName + "', '" + Major + "'";
 			System.out.println(input);              
@@ -74,8 +72,8 @@ public class DBProject5
 			String departmentCode = args[2];
 			String courseNumber = args[3];
 			
-			String input = "'" + studentID + "'" + departmentCode + "," + courseNumber + "'";
-			myDB.insert("Student", input);
+			String input = "" + studentID + ",'" + departmentCode + "'," + courseNumber + "";
+			myDB.insert("Enrollment", input);
 			
 			builder.append("<br><br><br> Enrollment Table after:" + myDB.query(query));
 			System.out.println(builder.toString()); 
