@@ -142,7 +142,5 @@ public class jdbc_db
       insert("Enrollment", "7043, 'MUSC', 1334");
       insert("Enrollment", "8635, 'MATH', 3546");
       insert("Enrollment", "7685, 'MUSC', 2456");
-      insert("MenuItem", "3,0,15,19.00");
-
    }
 }
