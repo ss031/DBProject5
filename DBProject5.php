@@ -21,12 +21,11 @@ if (isset($_REQUEST['choice'])) {
 		    Student Name: <input type="text" name="name"><br>
 		    Student ID: <input type="text" name="ID"><br>
 		    Major: <input type="text" name="major"><br>
-		    <input type="hidden" name="set" value="yes">
 		    <input name="submit" type="submit" >
 		</form>
 		<br><br>
 		<?php
-		if (isset($_POST['set'])) {
+		if (isset($_POST['submit'])) {
 			$input = array($_REQUEST['choice'], $_REQUEST['name'], $_REQUEST['ID'], $_REQUEST['major']);
 	 		execute($input);          
 		}
@@ -39,12 +38,11 @@ if (isset($_REQUEST['choice'])) {
 		    Course Number: <input type="text" name="courseNo"><br>
 		    Course Title: <input type="text" name="title"><br>
 		    Credit Hours: <input type="text" name="hours"><br>
-		    <input type="hidden" name="set" value="yes">
 		    <input name="submit" type="submit" >  
 		</form>
 		<br><br> 
 		<?php
-		if (isset($_POST['set'])) {
+		if (isset($_POST['submit'])) {
 			$input = array($_REQUEST['choice'], $_REQUEST['code'], $_REQUEST['courseNo'], $_REQUEST['title'], $_REQUEST['hours']);
 	 		execute($input);          
 		}
@@ -56,12 +54,11 @@ if (isset($_REQUEST['choice'])) {
 		    Enter Student ID: <input type="text" name="studentID"><br>
 		    Enter Department Code: <input type="text" name="deptCode"><br>
 		    Course Number: <input type="text" name="courseNumber"><br>
-		    <input type="hidden" name="set" value="yes">
 		    <input name="submit" type="submit" >  
 		</form>
 		<br><br> 
 		<?php
-		if (isset($_POST['set'])) {
+		if (isset($_POST['submit'])) {
 			$input = array($_REQUEST['choice'], $_REQUEST['studentID'], $_REQUEST['deptCode'], $_REQUEST['courseNumber']);
 	 		execute($input);          
 		}
@@ -76,12 +73,11 @@ if (isset($_REQUEST['choice'])) {
 		<form action="DBProject5.php?choice=5" method="post">
 			Enter which department you would like to view the courses from:<br>
 			<input type="text" name="deptCode">
-			<input type="hidden" name="set" value="yes">
 			<input name="submit" type="submit" >  
 			</form>
 		<br><br> 
 		<?php
-		if (isset($_POST['set'])) {
+		if (isset($_POST['submit'])) {
 			$input = array($_REQUEST['choice'], $_REQUEST['deptCode']);
 	 		execute($input);          
 		}
@@ -91,12 +87,11 @@ if (isset($_REQUEST['choice'])) {
 		<form action="DBProject5.php?choice=6" method="post">
 			Enter the ID of the student you would like to learn more about:<br>
 			<input type="text" name="studentID">
-			<input type="hidden" name="set" value="yes">
 			<input name="submit" type="submit" >  
 			</form>
 		<br><br>
 		<?php
-		if (isset($_POST['set'])) {
+		if (isset($_POST['submit'])) {
 			$input = array($_REQUEST['choice'], $_REQUEST['studentID']);
 	 		execute($input);          
 		}
