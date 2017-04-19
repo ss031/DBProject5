@@ -98,3 +98,4 @@ if (isset($_REQUEST['choice'])) {
 	} 
 }
 ?>
+<a href="DBProject5_homePage.html">BACK</a>
