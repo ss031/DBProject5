@@ -13,14 +13,10 @@ public class DBProject5
 		String Username = "arutiaga";              // Change to your own username
 		String mysqlPassword = "LaLaLand";    // Change to your own mysql Password
 		int choice = Integer.parseInt(args[0]); // Menu Item	
-	
 		// Connect to the database
-       	jdbc_db myDB = new jdbc_db();
-       		
+		jdbc_db myDB = new jdbc_db();	
 		myDB.connect(Username, mysqlPassword);
-		
 		myDB.initDatabase();				    
-		
 		// For debugging purposes:  Show the database before the insert
 		StringBuilder builder = new StringBuilder();
 		
