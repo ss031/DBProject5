@@ -124,11 +124,13 @@ public class jdbc_db
    // Assumes that the tables are already created
    public void initDatabase() throws SQLException 
    {
+   	 
       statement = connection.createStatement();
-      statement.executeUpdate("DELETE from Student");
-      statement.executeUpdate("DELETE from Course");
+
       statement.executeUpdate("DELETE from Enrollment");
-   
+	  statement.executeUpdate("DELETE from Course");
+	  statement.executeUpdate("DELETE from Student");
+ 	  
       insert("Student", "7043, 'Tove Lo', 'Music'");
       insert("Student", "8635,'Lorde','Algebra'");
       insert("Student", "7685,'Katy Perry','Music'");
