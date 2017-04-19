@@ -125,7 +125,7 @@ public class jdbc_db
    public void initDatabase() throws SQLException 
    {
       statement = connection.createStatement();
-      statement.executeUpdate("DELETE from Enrollment");
+     /* statement.executeUpdate("DELETE from Enrollment");
       statement.executeUpdate("DELETE from Course");
       statement.executeUpdate("DELETE from Student");
  	  
@@ -141,6 +141,6 @@ public class jdbc_db
    
       insert("Enrollment", "7043, 'MUSC', 1334");
       insert("Enrollment", "8635, 'MATH', 3546");
-      insert("Enrollment", "7685, 'MUSC', 2456");
+      insert("Enrollment", "7685, 'MUSC', 2456");*/
    }
 }
